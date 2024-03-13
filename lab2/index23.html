@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    thead th {
+      text-align: center !important;
+      vertical-align: middle !important;
+      background-color: lightgoldenrodyellow;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Dùng Tab</h1>
+  <nav class="nav nav-tabs ">
+    <a href="#edit" data-toggle="tab" class="nav-link active ">Danh sách</a>
+    <a href="#list" data-toggle="tab" class="nav-link">Thêm Nhân Viên</a>
+  </nav>
+  <div class="tab-content">
+    <div class="tab-pane active " id="edit">
+      <!--  -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title card-header ">BẢNG LƯƠNG THÁNG 12</div>
+        </div>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th rowspan="2">MÃ NV</th>
+              <th rowspan="2">HỌ VÀ TÊN</th>
+              <th colspan="3">THU NHẬP</th>
+            </tr>
+            <tr>
+              <th>LƯƠNG</th>
+              <th>THƯỞNG</th>
+              <th>PHỤ CẤP</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>NV100</td>
+              <td>NGUYỄN CÔNG PHƯỢNG</td>
+              <td>5000000</td>
+              <td>5000000</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>NV102</td>
+              <td>PHAN VĂN TÀI EM</td>
+              <td>9000000</td>
+              <td>6000000</td>
+              <td>1000000</td>
+            </tr>
+            <tr>
+              <td>NV103</td>
+              <td>LÊ HUỲNH ĐỨC</td>
+              <td>7000000</td>
+              <td>6000000</td>
+              <td>1000000</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="card-footer panel-footer mt-0 ">Lương của cầu thủ và huấn luyện viên chuyên nghiệp</div>
+      </div>
+    </div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+      Thêm Cầu Thủ
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Thêm Cầu Thủ</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+              <div class="tab-pane " id="list">
+                
+                <form action="">
+                  <div class="row" style="text-align:left;">
+                    <div class="form-group col-sm-6">
+                      <div class="form-group">
+                        <label for="">Mã Nhân Viên</label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                          placeholder="Mã Nhân Viên">
+                        <small id="helpId" class="form-text text-muted">Help text</small>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <div class="form-group">
+                        <label for="">Tên Nhân Viên</label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                          placeholder="Tên Nhân Viên">
+                        <small id="helpId" class="form-text text-muted">Help text</small>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+
+                  <div class="row" style="text-align:left;">
+                    <div class="form-group col-sm-6">
+                      <div class="form-group">
+                        <label for="">Lương</label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                          placeholder="Lương">
+                        <small id="helpId" class="form-text text-muted">Help text</small>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <div class="form-group">
+                        <label for="">Phụ Cấp</label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                          placeholder="Phụ Cấp">
+                        <small id="helpId" class="form-text text-muted">Help text</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" style="text-align:left;">
+                    <div class="form-group col-sm-6">
+                      <div class="form-group">
+                        <label for="">Câu lạc bộ</label>
+                        <select class="form-control" name="" id="">
+                          <option>HN</option>
+                          <option>QN</option>
+                          <option>HP</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <div class="form-group">
+                        <label for="">Lương</label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                          placeholder="Lương">
+                        <small id="helpId" class="form-text text-muted">Help text</small>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="row">
+                    <div class="form-group col-sm-4">
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                        <button class="btn btn-danger">Huỷ</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+              integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+              crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+              integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+              crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+              integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+              crossorigin="anonymous"></script>
+</body>
+
+</html>
